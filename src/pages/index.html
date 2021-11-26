@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSBuddy</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="w-full h-screen relative">
+      <div class="w-full min-h-screen fixed bg-transparent z-20">
+        <!-- header start -->
+        <header class="w-full flex justify-between h-16 items-center px-3">
+          <div>
+            <div>Speed <span id="showGameSpeed"></span></div>
+            <input type="range" min="0" max="20" value="5" id="slider" />
+          </div>
+          <div>
+            <select id="changeState" name="animation">
+              <option value="idle">Idle</option>
+              <option value="walk">Walk</option>
+              <option value="run">Run</option>
+              <option value="jump">Jump</option>
+              <option value="dead">Dead</option>
+            </select>
+          </div>
+        </header>
+        <!-- header ended -->
+      </div>
+
+      <canvas id="SSBuddy" class="absolute bottom-20 left-20 w-96 h-96 z-50"></canvas>
+      <canvas id="bg" class="fixed w-full h-screen"></canvas>
+    </main>
+  </body>
+</html>

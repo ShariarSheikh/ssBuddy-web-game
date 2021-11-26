@@ -1,0 +1,9 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+#SSBuddy {
+  border-radius: 10px;
+  z-index: 20;
+}
